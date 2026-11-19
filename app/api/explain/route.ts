@@ -24,8 +24,8 @@ const ExplainRequest = z.object({
 
 /**
  * Best-effort in-memory rate limit (per instance). Protects against abuse
- * of the AI provider without collecting any identity: only a hashed bucket
- * key with a short retention window.
+ * of the AI provider using the forwarded address and lesson slug as an
+ * in-memory bucket key with a short retention window.
  */
 const WINDOW_MS = 60_000;
 const MAX_REQUESTS_PER_WINDOW = 30;

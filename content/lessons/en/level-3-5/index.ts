@@ -1,12 +1,14 @@
 import type { Lesson } from "@/lib/content/types";
+import { aLetterAcrossTheSea } from "../a-letter-across-the-sea";
+import { stormOverHarborTown } from "../storm-over-harbor-town";
+import { theMapmakersApprentice } from "../the-mapmakers-apprentice";
+import { theNightMarket } from "../the-night-market";
+import { whenTheBellsStopped } from "../when-the-bells-stopped";
 
-/**
- * Content pack: English · Levels 3–5 (growing readers).
- * Each lesson lives in its own file next to this one and is exported here.
- *
- * LESSON AUTHORS: create your lesson file(s) in this folder, then import
- * them below and add them to the array. See
- * `content/lessons/en/maya-and-the-river-bridge.ts` for the reference
- * quality bar (story voice, option rationales, glossary, teaching notes).
- */
-export const lessonsLevel3to5En: Lesson[] = [];
+export const lessonsLevel3to5En: Lesson[] = [
+  theNightMarket,
+  aLetterAcrossTheSea,
+  theMapmakersApprentice,
+  stormOverHarborTown,
+  whenTheBellsStopped,
+];

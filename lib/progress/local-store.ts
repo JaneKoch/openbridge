@@ -11,6 +11,7 @@ import { nextReadingLevel } from "@/lib/adaptive";
 import type { Lesson } from "@/lib/content/types";
 
 const STORAGE_KEY = "openbridge.progress.v1";
+const serverSnapshot = defaultProgress();
 
 let cached: StudentProgress | null = null;
 const listeners = new Set<() => void>();
@@ -54,7 +55,7 @@ export function useProgress(): StudentProgress {
   return useSyncExternalStore(
     subscribe,
     load,
-    () => defaultProgress()
+    () => serverSnapshot
   );
 }
 

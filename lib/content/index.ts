@@ -38,10 +38,14 @@ export function getLessonSummaries(options?: {
 export function getRecommendedLessons(
   level: Lesson["level"],
   completedSlugs: Set<string>,
-  options?: { limit?: number; excludeSlug?: string }
+  options?: { language?: Lesson["language"]; limit?: number; excludeSlug?: string }
 ): LessonSummary[] {
   const scored = allLessons
-    .filter((lesson) => lesson.slug !== options?.excludeSlug)
+    .filter(
+      (lesson) =>
+        lesson.slug !== options?.excludeSlug &&
+        (!options?.language || lesson.language === options.language)
+    )
     .map((lesson) => {
       let score: number;
       if (!completedSlugs.has(lesson.slug) && lesson.level === level) {
