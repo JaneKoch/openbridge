@@ -471,7 +471,7 @@ export default function PrivacyPage() {
             className="h-11 rounded-full px-5 font-bold"
           >
             <a href={siteConfig.repoUrl} target="_blank" rel="noreferrer">
-              <Github aria-hidden="true" />
+              <Code2 aria-hidden="true" />
               Open the repository
               <span className="sr-only">(opens in a new tab)</span>
             </a>

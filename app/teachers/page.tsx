@@ -495,7 +495,7 @@ export default function TeachersPage() {
                   className="h-11 rounded-full bg-foreground px-5 font-bold text-background hover:bg-foreground/90"
                 >
                   <a href={siteConfig.repoUrl} target="_blank" rel="noreferrer">
-                    <Github aria-hidden="true" />
+                    <Code2 aria-hidden="true" />
                     Visit the repository
                     <span className="sr-only">(opens in a new tab)</span>
                   </a>

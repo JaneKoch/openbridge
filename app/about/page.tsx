@@ -222,7 +222,7 @@ export default function AboutPage() {
             className="mt-7 h-11 rounded-full px-5 font-bold"
           >
             <a href={siteConfig.repoUrl} target="_blank" rel="noreferrer">
-              <Github aria-hidden="true" />
+              <Code2 aria-hidden="true" />
               Read the code on GitHub
               <span className="sr-only">(opens in a new tab)</span>
             </a>
@@ -367,7 +367,7 @@ export default function AboutPage() {
               className="h-11 rounded-full px-5 font-bold"
             >
               <a href={siteConfig.issuesUrl} target="_blank" rel="noreferrer">
-                <Github aria-hidden="true" />
+                <Code2 aria-hidden="true" />
                 Find something to work on
                 <span className="sr-only">(opens in a new tab)</span>
               </a>
@@ -387,7 +387,7 @@ export default function AboutPage() {
             className="h-11 rounded-full px-5 font-bold"
           >
             <a href={siteConfig.repoUrl} target="_blank" rel="noreferrer">
-              <Github aria-hidden="true" />
+              <Code2 aria-hidden="true" />
               Join us on GitHub
               <span className="sr-only">(opens in a new tab)</span>
             </a>
