@@ -1,3 +1,5 @@
+import { elJardinDeLaLuna } from "./el-jardin-de-la-luna";
+import { elPequenoBarcoRojo } from "./el-pequeno-barco-rojo";
 import type { Lesson } from "@/lib/content/types";
 
 /**
@@ -10,4 +12,4 @@ import type { Lesson } from "@/lib/content/types";
  * AUTORES: crea tus archivos de cuento en esta carpeta, impórtalos abajo y
  * agrégalos al arreglo.
  */
-export const lessonsEs: Lesson[] = [];
+export const lessonsEs: Lesson[] = [elPequenoBarcoRojo, elJardinDeLaLuna];
